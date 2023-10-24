@@ -1,0 +1,169 @@
+/* google font cdn */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nosifer&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Inter',sans-serif;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  border-bottom: 2px solid #6666;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  padding: 0 4vw;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 2vw;
+}
+nav ul li a {
+  color: #000;
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: silver;
+}
+nav .logo {
+  color: #000;
+  font-size: 2vw;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+nav .logo span {
+  font-size: 2vw;
+  color: #ff725e;
+}
+.right-nav button {
+  font-size: 1.1vw;
+  background: #ff725e;
+  border: none;
+  color: #fff;
+  padding: 0.5vw 1vw;
+  border-radius: 3px;
+}
+.right-nav i {
+  color: #000;
+  font-size: 1.2vw;
+  font-weight: 500;
+  display: none;
+}
+.contain {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+}
+.left-contain {
+  width: 55%;
+  height: 100%;
+  padding: 5.5vw 4vw;
+}
+.left-contain h1 {
+  font-size: 4.2vw;
+  line-height: 5.5vw;
+}
+.left-contain p {
+  font-size: 1vw;
+  font-weight: 500;
+  margin-top: 1.5vw;
+  color: #666;
+  max-width: 90%;
+}
+.left-contain .cta-btn {
+  padding: 0.8vw 3vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 2.8vw;
+  border: none;
+  background: #ff725e;
+  color: #fff;
+  border-radius: 2px;
+  transition: .3s;
+}
+.left-contain .cta-btn:hover {
+  background: #ff715edc;
+}
+.left-contain .text {
+  color: #ff725e;
+}
+.right-contain {
+  width: 45%;
+  height: 100%;
+  padding: 5.5vw 4vw 5.5vw 0vw;
+}
+.right-contain img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media(max-width:600px) {
+  nav {
+    align-items: center;
+    padding: 0 6vw;
+    height: 70px;
+  }
+  nav .logo {
+    font-size: 8vw;
+  }
+  nav ul, .right-nav button {
+    display: none;
+  }
+  nav .logo span {
+    font-size: 6vw;
+    color: #ff725e;
+  }
+  .right-nav i {
+    display: block;
+    font-size: 5vw;
+    font-weight: 600;
+  }
+  .contain {
+    flex-direction: column;
+    height: calc(100% - 70px);
+  }
+  .contain .left-contain  {
+    width: 100%;
+    height: 45%;
+    padding: 4vw 6vw;
+  }
+  .contain .left-contain h1 {
+    font-size: 11vw;
+    line-height: 11vw;
+  }
+  .contain .left-contain p {
+    font-size: 3vw;
+    margin-top: 2.5vw;
+    margin-bottom: 3.5vw;
+  }
+  .contain .left-contain p span {
+    display: none;
+  }
+  .contain .left-contain .cta-btn {
+    font-size: 4vw;
+    padding: 2.5vw 3.8vw;
+    font-weight: 500;
+  }
+  .contain .right-contain {
+    width: 100%;
+    height: 55%;
+  }
+  .contain .right-contain img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
